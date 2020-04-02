@@ -1,0 +1,4 @@
+* SICP in Org Format
+
+The second edition of the book Structure and Interpretation of Computer Programs
+(SICP) in Org format.
