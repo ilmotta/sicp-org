@@ -3,6 +3,7 @@
 #+DESCRIPTION: Unofficial SICP for Org users
 #+STARTUP: overview entitiespretty
 #+OPTIONS: num:nil
+#+PROPERTY: header-args :results silent
 #+DATE: 2020-03-25
 #+AUTHOR: Harold Abelson
 #+SUBAUTHOR: Gerald Jay Sussman, Julie Sussman
