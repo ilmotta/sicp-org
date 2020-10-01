@@ -22339,18 +22339,3 @@ Compilers for popular languages, such as C and C++, put hardly any error-checkin
 [fn:338] Of course, with either the interpretation or the compilation strategy we must also implement for the new machine storage allocation, input and output, and all the various operations that we took as "primitive" in our discussion of the evaluator and compiler.  One strategy for minimizing work here is to write as many of these operations as possible in Lisp and then compile them for the new machine.  Ultimately, everything reduces to a small kernel (such as garbage collection and the mechanism for applying actual machine primitives) that is hand-coded for the new machine.
 
 [fn:339] This strategy leads to amusing tests of correctness of the compiler, such as checking whether the compilation of a program on the new machine, using the compiled compiler, is identical with the compilation of the program on the original Lisp system.  Tracking down the source of differences is fun but often frustrating, because the results are extremely sensitive to minuscule details.
-
-#+BEGIN_EXAMPLE
-Local variables:
-fill-column: 72
-line-spacing: 2
-org-hide-emphasis-markers: t
-sentence-end-double-space: t
-truncate-lines: nil
-visual-fill-column-center-text: t
-eval: (visual-line-mode +1)
-eval: (visual-fill-column-mode +1)
-eval: (hl-line-mode -1)
-eval: (variable-pitch-mode +1)
-End:
-#+END_EXAMPLE
