@@ -1,4 +1,22 @@
-* SICP in Org Format
+* SICP 2nd Edition in Org Format
 
-The second edition of the book Structure and Interpretation of Computer Programs
-(SICP) in Org format.
+The second edition of the book [[https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs][Structure and Interpretation of Computer Programs
+(SICP)]] in [[https://orgmode.org/][Org format]].
+
+** About this
+
+The org file is based on [[https://www.neilvandyke.org/sicp-texi/][SICP in Texinfo Format]], but various automated and manual transformations had to be made in order to take advantage of certain Org features, like footnote, headline, and index links. The Babel source blocks all use the =scheme= language. If you're using the [[https://www.nongnu.org/geiser/][Geiser package]] you can set a default implementation in the variable =geiser-default-implementation=, such as [[https://www.gnu.org/software/mit-scheme/][MIT/GNU Scheme]].
+
+The accompanying  [[file:.dir-locals.el][dir-locals.el]] file sets a couple variables and enables certain minor modes to improve your reading experience, but you'll probably want to customize it. The most important minor mode for this book is [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Visual-Line-Mode.html][Visual Line Mode]] and *you'll need to enable it because I've decided to use one line per paragraph instead of filling paragraphs* (i.e. redistribute the line breaks according to a fixed fill column value). The reason is because SICP is a long book and I didn't want to force other people to use my preferred way to break lines. All the source and example blocks are optimized for a minimum =fill-column= of =72=. Ideally, this repository could have two different org files, one with filled paragraphs and another without it (any contribution is appreciated).
+
+** Why?
+
+SICP has tons of source code and as an Emacs user, you wish more programming books also had an Org version so you could easily execute source code using  [[https://orgmode.org/worg/org-contrib/babel/][Babel]].  There are countless Emacs and Org features you can leverage to read this book, and let's be honest, your life revolves around Org mode, so why not?
+
+** Can I export it to HTML or PDF?
+
+The HTML export works just fine, but I didn't manage to export it to PDF using =pdfTeX 3.14159265-2.6-1.40.20=. It'd be nice to be able to generate the PDF version, but to be honest if that's your goal then I'd highly recommend getting the PDF from [[https://github.com/sarabander/sicp-pdf][sarabander/sicp-pdf]] or using the excellent [[https://sarabander.github.io/sicp/][online version optimized for HTML5]].
+
+** How can I contribute?
+
+If you find formatting issues in the Org version or just want to improve something, please, create an issue or submit a PR. Probably the easiest way to contribute is to read this book using your own fork, so that as you read the book you're more likely to fix/improve it.
